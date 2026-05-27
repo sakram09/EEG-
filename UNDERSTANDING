@@ -1,0 +1,13 @@
+Step 1: Data Acquisition & Setup. 
+Sab se pehle dataset download hoga. Agar UCI dataset hai, to wo ek .csv file hogi jisme dimaag ki electrical readings (voltage over time) hongi.Step 2: Spectral Decomposition (The "Bio" Part)Yahan AI code likhega jo raw signal ko 4 baray hisson mein takseem karega:
+Delta (<4Hz): Deep sleep (Seizure mein iska spike aata hai).Theta (4-8Hz): 
+Drowsiness.
+Alpha (8-13Hz): Relaxed state.
+Beta (13-30Hz): Active thinking.
+Step 3: Feature Extraction (Wavelet Transform)
+Basic Fourier Transform ke bajaye hum Wavelets use karenge. Wavelets ka faida ye hai ke ye batate hain ke signal mein tabdeeli kab aayi aur kitni aayi. Ye PhD level research mein lazmi hota hai.
+Step 4: Model Training (The "ML" Part)AI yahan GradientBoosting ya XGBoost train karega. Ye model seekhega ke "Ictal" (Seizure) aur "Inter-ictal" (Normal) signals mein kya farq hai.
+Step 5: Visual Performance & XAIAakhir mein aapko Confusion Matrix aur Feature Importance Plot milega. Professor ko dikhane ke liye ye sab se attractive part hai, kyunki ye prove karta hai ke aapka model "Alpha" ya "Delta" wave ko dekh kar faisla kar raha hai.
+💡 Attractive Visuals Jo Aapko Milenge:PSD (Power Spectral Density) Plot: Ye dikhayega ke seizure ke waqt dimaag ki energy kis frequency par "blast" hui.
+Heatmap: Classification ki accuracy dikhane ke liye.
+Signal Comparison: Ek normal brain wave aur ek seizure wave ka side-by-side comparison.
